@@ -16,4 +16,4 @@ set(N_VERSION "" CACHE STRING "Override N version string. Default is to find out
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(n main.c)
+add_executable(n src/main.c)
