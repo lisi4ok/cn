@@ -13,16 +13,16 @@ typedef struct Error {
     char *message;
 } Error;
 
-Error ok = {
-    ERROR_NONE,
-    NULL,
-};
-
 #define ERROR_CREATE(n, type, message) \
     Error (n) =  { (type), (message) }
 
 #define ERROR_PREPARE(n, t, msg) \
     (n).type = (t); \
     (n).message = (msg);
+
+Error ok = {
+    ERROR_NONE,
+    NULL,
+};
 
 #endif
