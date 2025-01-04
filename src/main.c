@@ -1,4 +1,3 @@
-
 #include "error.c"
 #include "parser.c"
 
@@ -40,6 +39,11 @@ int main(int argc, char **argv)
         printf("%s \n----\n%s\n", path, contents);
         free(contents);
     }
+
+    //Error error2 = lex(NULL, NULL,NULL);
+    Error error = parse_expression(contents);
+    print_error(error);
+    // print_error(error2);
 
     //printf("ENV: %s\n", version);
     //printf("argc: %d\n", argc);
