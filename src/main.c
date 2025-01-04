@@ -20,6 +20,12 @@
 //         "-v: print version and exit\n");
 // }
 
+void usage(char **argv)
+{
+    printf("Usage: %s [parsing file]\n", argv[0]);
+    exit(EXIT_FAILURE);
+}
+
 int main(int argc, char **argv)
 {
     if (argc != 2) {

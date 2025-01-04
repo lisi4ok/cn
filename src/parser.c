@@ -52,9 +52,3 @@ char *file_contents(char *path)
     contents[bytes] = '\0';
     return contents;
 }
-
-void usage(char **argv)
-{
-    printf("Usage: %s [parsing file]\n", argv[0]);
-    exit(EXIT_FAILURE);
-}
