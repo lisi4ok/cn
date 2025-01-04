@@ -1,4 +1,3 @@
-
 let variable_null = null;
 
 int variable_int = 1;
